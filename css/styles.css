@@ -55,7 +55,7 @@ button {
   margin: 0 auto;
   padding: 0 15px;
 
-  /* outline: 2px solid red;
+  /*outline: 2px solid red;
   outline-offset: -2px;*/
 }
 .list {
@@ -146,6 +146,11 @@ button {
 .header-link-current {
   color: var(--accent-txt-cl);
 }
+.mail-icon,
+.tel-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
 .header-mail,
 .header-tel {
   font-weight: 500;
@@ -225,6 +230,7 @@ button {
 }
 .team-description {
   padding: 30px 0;
+  margin-bottom: 16px;
 }
 .team-list {
   display: flex;
@@ -232,7 +238,6 @@ button {
 }
 .team-item {
   background: #ffffff;
-  /* material shadow v1 */
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -253,6 +258,34 @@ button {
   line-height: 1.19;
   text-align: center;
 }
+
+/*Customers section*/
+.customers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.customers-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  color: #afb1b8;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.customers-icon {
+  fill: currentColor;
+}
+.customers-link:hover,
+.customers-link:focus {
+  color: var(--accent-txt-cl);
+  border-color: var(--accent-txt-cl);
+}
+
 /*Footer section*/
 .footer {
   background-color: var(--dark-bg-cl);
@@ -349,3 +382,37 @@ address {
   line-height: 1.88;
   color: var(--main-txt-cl);
 }
+/*Socials icons*/
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: #afb1b8;
+  background-color: var(--light-bg-cl);
+  border-radius: 50%;
+}
+.socials-icon {
+  fill: currentColor;
+}
+.socials-link:hover,
+.socials-link:focus {
+  color: var(--light-bg-cl);
+  background-color: var(--accent-txt-cl);
+}
+
+/*Спосіб з вказанням fill для іконки*/
+
+/*.socials-link:hover {
+  background-color: var(--accent-txt-cl);
+}
+.socials-link:hover .socials-icon {
+  fill: var(--light-bg-cl);
+}*/
