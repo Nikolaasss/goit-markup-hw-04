@@ -223,6 +223,15 @@ button {
 .work {
   padding-top: 0;
 }
+.about-svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background-color: var(--gray-bg-cl);
+  margin-bottom: 30px;
+}
 
 /*Team section*/
 .team {
@@ -291,6 +300,9 @@ button {
   background-color: var(--dark-bg-cl);
   padding: 60px 0;
 }
+.footer-logo-address {
+  margin-right: 70px;
+}
 .footer-logo-link {
   margin-right: 0;
 }
@@ -329,6 +341,36 @@ address {
 .footer-tel:focus {
   color: var(--accent-txt-cl);
 }
+.foter-subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--light-bg-cl);
+  margin-bottom: 20px;
+}
+.foter-container {
+  display: flex;
+}
+.foter-socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: var(--light-bg-cl);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.foter-socials-icon {
+  fill: currentColor;
+}
+.foter-socials-link:hover,
+.foter-socials-link:focus {
+  color: var(--light-bg-cl);
+  background-color: var(--accent-txt-cl);
+}
 /*Portfolio section*/
 .project-list-btn {
   margin-bottom: 50px;
@@ -353,10 +395,17 @@ address {
 .projects-btn:focus {
   color: var(--light-bg-cl);
   background-color: var(--accent-txt-cl);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .projects-btn-current {
   color: var(--light-bg-cl);
   background-color: var(--accent-txt-cl);
+}
+.cards-item:hover,
+.cards-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .cards-list {
   display: flex;
